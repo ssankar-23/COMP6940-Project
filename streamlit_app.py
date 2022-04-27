@@ -112,7 +112,7 @@ def show_map():
                 fill_color=rainbow[cluster-1],
                 fill_opacity=0.7).add_to(m)
 
-        st_folium(m)
+        folium_static(m)
     
     elif modelselect == 'ExtraTrees':
         m = folium.Map(location=[latitude, longitude], zoom_start=8)
@@ -135,7 +135,7 @@ def show_map():
                 fill_color=rainbow[cluster-1],
                 fill_opacity=0.7).add_to(m)
 
-        st_folium(m)
+        folium_static(m)
         
     elif modelselect == 'kNN':
         m = folium.Map(location=[latitude, longitude], zoom_start=8)
@@ -158,7 +158,7 @@ def show_map():
                 fill_color=rainbow[cluster-1],
                 fill_opacity=0.7).add_to(m)
 
-        st_folium(m)
+        folium_static(m)
         
     
     
