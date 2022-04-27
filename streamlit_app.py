@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 import streamlit as st
-from streamlit_folium import folium_static
+from streamlit_folium import st_folium
 from PIL import Image
 import xgboost as xgb
 import matplotlib.cm as cm
@@ -112,7 +112,7 @@ def show_map():
                 fill_color=rainbow[cluster-1],
                 fill_opacity=0.7).add_to(m)
 
-        folium_static(m)
+        st_folium(m)
     
     elif modelselect == 'ExtraTrees':
         m = folium.Map(location=[latitude, longitude], zoom_start=8)
@@ -135,7 +135,7 @@ def show_map():
                 fill_color=rainbow[cluster-1],
                 fill_opacity=0.7).add_to(m)
 
-        folium_static(m)
+        st_folium(m)
         
     elif modelselect == 'kNN':
         m = folium.Map(location=[latitude, longitude], zoom_start=8)
@@ -158,7 +158,7 @@ def show_map():
                 fill_color=rainbow[cluster-1],
                 fill_opacity=0.7).add_to(m)
 
-        folium_static(m)
+        st_folium(m)
         
     
     
