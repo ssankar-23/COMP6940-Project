@@ -6,4 +6,6 @@ numpy>=1.21.6
 streamlit-folium>=0.5
 requests
 matplotlib
+jinja2
+branca
 click==8
