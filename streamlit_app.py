@@ -1,11 +1,11 @@
 import pandas as pd
 import numpy as np
 import streamlit as st
-from streamlit_folium import st_folium
+import folium
+from streamlit_folium import folium_static
 from PIL import Image
 import xgboost as xgb
 import matplotlib.cm as cm
-import folium
 import matplotlib.colors as colors
 
 xgb1 = xgb.Booster()
